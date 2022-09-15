@@ -1,0 +1,22 @@
+These are your Requirements Specifications for this program:
+“Write a function classify_triangle() that takes three  parameters: a, b, and c. The three parameters represent the lengths of the sides of a triangle. The function returns a string that specifies whether the triangle is scalene, isosceles, or equilateral, and whether it is a right triangle as well.”
+Hint:  Write a function called classify_triangle(a, b, c) where a, b, and c are the lengths of the sides of the triangles.   You may either allow the user to enter values that you pass to classify_triangle() or your "main" routine can just invoke classify_triangle() with values.   This approach allows you to easily invoke classify_triangle() from your test framework.
+You will not be graded on how well you write the program, but do try to do a decent job.  You may want to include a few bugs in your program to demonstrate that your test script is working properly and is able to find problems.
+You'll find a partial solution in Canvas to show how to use Python's UnitTest framework.   Your solution should be managed using GitHub within a new repository created just for this assignment.
+Assignment Deliverables:
+Deliverable 1: Upload the file(s) with Python source code for your classify triangle solution to Canvas.  The file(s) should include the source code used to solve the problem and the test cases for the code.  Your test cases should demonstrate that you've adequately tested your solution. 
+Deliverable 2: Upload a text file or screen shot to show the input and output of running the program and demonstrating that your program has been adequately tested.
+Deliverable 3: Describe your experience with this assignment, specifically:
+    What challenges did you encounter with this assignment, if any?
+        I found it difficult to set up the environment. To begin, I had no idea how to install Python and then utilize the UnitTest framework. I discovered a guide on the internet that assisted me in getting started. However, when I attempted to perform my test cases, I encountered some difficulties. The system would not load results in the terminal. I still have some times where a restart is needed to get them to load again.
+
+    What did you think about the requirements specification for this assignment?
+    The requirements specification to be lacking in my opinion. There are various ambiguities, and the program could be more precise. For example, what are the program's premises, what form of data validation is required, and what function return types are available. This problem may lead into a rabbit hole until further abstraction or requirements are supplied. I found decimals difficult because, without knowing who set the user's needs for the fields, rounding might cause output values to move.
+What challenges did you encounter with the tools?
+    Because I had purchased a new laptop, configuring all of the tools became difficult. I've also never dealt with MacOS before, so there's a steep learning curve. I had a lot of trouble getting unit tests to run properly in PyCharm.
+Describe the criteria you used to determine that you had sufficient test cases, i.e. how did you know you were done?
+    I  started by looking at the total number of test cases to see if I had enough of them. I came to the conclusion that I needed about 3–4 test cases as a proof of concept to accurately test the system. Typically, I would test 10–25 functions, with 10% of the cases being utilized only to test intention failures. These faults could be anticipated rounding errors or recognized anti-runs.
+
+Deliverable 4: Submit the URL of the GitHub repo containing your complete solution.   The files in the repo should match what you have uploaded to Canvas.
+Please contact me if you have any questions.
+
