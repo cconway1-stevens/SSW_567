@@ -36,9 +36,8 @@ def classify_triangle(arr):
                 return "Right"
             elif legA != legB != legC:
                 return "Scalene"
-        print("win")
-    else:
-        print("Fail")
+        else:
+                return "NotATriangle"
 
 
 def runClassify_triangle(arr):
@@ -62,8 +61,8 @@ class TestTriangles(unittest.TestCase):
     def test_Right(self):
         #test cases to check if the three points form a Right triangle
         self.assertEqual(classify_triangle([3,4,5]), "Right", "a = 3, b = 4, c = 5 is a Right triangle")
-        self.assertEqual(classify_triangle([3,4,5]), "Right", "a = 9, b = 16, c = 25 is a Right triangle")
-        self.assertEqual(classify_triangle([2,2,2.82843]), "Right", "a = 2, b = 2, c = 2.82843 is a Right triangle")
+        self.assertEqual(classify_triangle([7,24,25]), "Right", "a = 7, b = 24, c = 25 is a Right triangle")
+        self.assertEqual(classify_triangle([5,12,13]), "Right", "a = 5, b = 12, c = 13 is a Right triangle")
     def test_Scalene(self):
     #test cases to check if the three points form a Scalene triangle
         self.assertEqual(classify_triangle([6,5,4]), "Scalene", "a = 6, b = 5, c = 4 is a Scalene triangle")
@@ -74,7 +73,7 @@ class TestTriangles(unittest.TestCase):
         self.assertEqual(classify_triangle([2,3,7]), "NotATriangle", "a = 2, b = 3, c = 7 is not a triangle")
         self.assertEqual(classify_triangle([4,6,14]), "NotATriangle", "a = 4, b = 6, c = 14 is not a triangle")
         self.assertEqual(classify_triangle([4.5,6.7,56]), "NotATriangle", "a = 4.5, b = 6.7, c = 56 is not a triangle")
-        self.assertEqual(classify_triangle([1000,1002,34]), "NotATriangle", "a = 1000, b = 1002, c = 34 is not a triangle")
+        self.assertEqual(classify_triangle([67,1002,7999999999]), "NotATriangle", "a = 67, b = 1002, c = 7999999999 is not a triangle")
 if __name__ == '__main__':
     #Sample numbers to input to test the program output 
     runClassify_triangle([5,5,5])
