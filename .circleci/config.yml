@@ -12,8 +12,8 @@ jobs:
         command:
           pip install pytest
           pytest--junitxml=test-results/junit.xmlTestTriangle.py
-    - store_test_results:
-       path: test-results
+      - store_test_results:
+        path: test-results
 
 workflows:
   testing_triangles:
